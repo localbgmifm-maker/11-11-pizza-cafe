@@ -1,0 +1,1060 @@
+@media (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding-top: 126px;
+        padding-bottom: 88px;
+    }
+
+
+    /* =====================================================
+       MOBILE TOP NAVBAR
+    ===================================================== */
+
+    .navbar {
+        position: fixed;
+
+        top: 8px;
+        left: 8px;
+        right: 8px;
+
+        width: auto;
+        height: 56px;
+
+        margin: 0;
+        padding: 0 10px 0 14px;
+
+        display: flex;
+        align-items: center;
+
+        z-index: 5000;
+
+        border-radius: 17px;
+
+        background:
+            rgba(255, 255, 255, 0.90);
+
+        border:
+            1px solid
+            rgba(255, 255, 255, 0.95);
+
+        backdrop-filter:
+            blur(22px);
+
+        -webkit-backdrop-filter:
+            blur(22px);
+
+        box-shadow:
+            0 7px 25px
+            rgba(55, 30, 15, 0.12);
+    }
+
+
+    .logo {
+        display: block;
+
+        flex: 1;
+        min-width: 0;
+
+        margin: 0;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-size: 17px;
+        font-weight: 900;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .desktop-search {
+        display: none !important;
+    }
+
+
+    .nav-links {
+        flex: 0 0 auto;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    .nav-links .nav-item {
+        display: none !important;
+    }
+
+
+    .nav-links .cart-nav {
+        display: none !important;
+    }
+
+
+    .login-btn {
+        display: flex !important;
+
+        width: 39px;
+        height: 39px;
+
+        margin: 0;
+        padding: 0;
+
+        flex-shrink: 0;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 11px;
+    }
+
+
+    .login-btn span {
+        display: none !important;
+    }
+
+
+    .login-btn i {
+        font-size: 17px;
+    }
+
+
+    /* =====================================================
+       MOBILE SEARCH
+    ===================================================== */
+
+    .mobile-search-box {
+        display: block !important;
+
+        position: fixed;
+
+        top: 71px;
+        left: 10px;
+        right: 10px;
+
+        width: auto;
+
+        margin: 0;
+        padding: 0;
+
+        z-index: 4999;
+    }
+
+
+    .mobile-search-box form {
+        width: 100%;
+        height: 45px;
+
+        margin: 0;
+        padding: 0 5px 0 13px;
+
+        display: flex;
+        align-items: center;
+
+        gap: 7px;
+
+        border-radius: 13px;
+
+        background:
+            rgba(255, 255, 255, 0.92);
+
+        border:
+            1px solid
+            rgba(255, 255, 255, 0.95);
+
+        backdrop-filter:
+            blur(20px);
+
+        -webkit-backdrop-filter:
+            blur(20px);
+
+        box-shadow:
+            0 6px 22px
+            rgba(55, 30, 15, 0.10);
+    }
+
+
+    .mobile-search-box form > i {
+        flex-shrink: 0;
+
+        font-size: 14px;
+    }
+
+
+    .mobile-search-box input {
+        flex: 1;
+
+        min-width: 0;
+        width: 100%;
+        height: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        outline: none;
+
+        background: transparent;
+
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+
+    .mobile-search-box input::placeholder {
+        opacity: 0.55;
+    }
+
+
+    .mobile-search-box button {
+        width: 35px;
+        height: 35px;
+
+        flex-shrink: 0;
+
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+
+    .mobile-search-box button i {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        width: calc(100% - 20px);
+
+        min-height: 225px;
+
+        margin: 8px auto 0;
+        padding: 18px 16px;
+
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        overflow: hidden;
+    }
+
+
+    .hero-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .hero-label {
+        display: inline-flex;
+
+        padding: 5px 9px;
+
+        border-radius: 20px;
+
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       HERO HEADING
+    ===================================================== */
+
+    .hero-content h1 {
+        margin: 9px 0 7px;
+
+        color: #ffffff;
+
+        font-size: 27px;
+
+        line-height: 1.08;
+
+        font-weight: 900;
+
+        letter-spacing: -0.8px;
+
+        text-shadow:
+            0 2px 7px
+            rgba(0, 0, 0, 0.35);
+    }
+
+
+    .hero-content h1 strong {
+        display: block;
+
+        color: #ffb15c;
+
+        font-weight: 900;
+
+        text-shadow:
+            0 2px 7px
+            rgba(0, 0, 0, 0.35);
+    }
+
+
+    .hero p {
+        max-width: 285px;
+
+        margin: 0 auto 12px;
+
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+
+    .hero-buttons {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 6px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+        min-height: 36px;
+
+        padding: 0 12px;
+
+        border-radius: 10px;
+
+        font-size: 10px;
+
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .hero-pizza,
+    .pizza-emoji {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       MENU / CATEGORIES SECTION
+    ===================================================== */
+
+    .categories-section {
+        width: calc(100% - 20px);
+
+        margin: 18px auto 0;
+    }
+
+
+    /* =====================================================
+       MENU SECTION HEADING — BIG & CLEAR
+    ===================================================== */
+
+    .section-heading {
+        margin: 0 0 12px;
+
+        text-align: center;
+    }
+
+
+    .section-heading span {
+        color: #bd6a34;
+
+        font-size: 11px;
+
+        font-weight: 900;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .section-heading h2 {
+        margin: 7px 0 5px;
+
+        font-size: 25px;
+
+        line-height: 1.15;
+
+        font-weight: 900;
+
+        letter-spacing: -0.6px;
+
+        color: #24160f;
+    }
+
+
+    .section-heading p {
+        margin: 0;
+
+        font-size: 12px;
+
+        line-height: 1.4;
+
+        color: #6f5b50;
+    }
+
+
+    /* =====================================================
+       CATEGORY GRID
+    ===================================================== */
+
+    .categories-grid {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+    }
+
+
+    .category-card {
+        width: 100%;
+
+        min-height: 100px;
+
+        padding: 10px 7px;
+
+        border-radius: 15px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    .category-icon {
+        margin-bottom: 5px;
+
+        font-size: 28px;
+
+        line-height: 1;
+    }
+
+
+    /* =====================================================
+       CATEGORY TEXT — BIG & CLEAR
+    ===================================================== */
+
+    .category-card h3 {
+        margin: 0 0 4px;
+
+        font-size: 15px;
+
+        line-height: 1.15;
+
+        font-weight: 900;
+
+        color: #24160f;
+    }
+
+
+    .category-card p {
+        margin: 0;
+
+        font-size: 10px;
+
+        line-height: 1.3;
+
+        color: #7b675c;
+    }
+
+
+    /* =====================================================
+       DELIVERY SECTION
+    ===================================================== */
+
+    .delivery-section {
+        width: calc(100% - 20px);
+
+        margin: 18px auto 0;
+    }
+
+
+    .delivery-card {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 18px 14px 10px;
+
+        border-radius: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        overflow: hidden;
+    }
+
+
+    .delivery-content {
+        width: 100%;
+    }
+
+
+    .delivery-badge {
+        display: inline-flex;
+
+        padding: 6px 10px;
+
+        border-radius: 16px;
+
+        font-size: 8px;
+
+        line-height: 1;
+
+        font-weight: 800;
+    }
+
+
+    .delivery-content h2 {
+        margin: 10px 0 7px;
+
+        font-size: 28px;
+
+        line-height: 1.05;
+
+        font-weight: 900;
+    }
+
+
+    .delivery-content p {
+        max-width: 350px;
+
+        margin: 0;
+
+        font-size: 13px;
+
+        line-height: 1.45;
+    }
+
+
+    .delivery-info {
+        width: 100%;
+
+        margin-top: 11px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 7px;
+    }
+
+
+    .delivery-info-box {
+        min-width: 0;
+
+        padding: 9px 7px;
+
+        border-radius: 11px;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 6px;
+    }
+
+
+    .delivery-info-icon {
+        width: 30px;
+        height: 30px;
+
+        flex-shrink: 0;
+
+        border-radius: 8px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .delivery-info-icon i {
+        font-size: 11px;
+    }
+
+
+    .delivery-info-box strong {
+        display: block;
+
+        font-size: 9px;
+
+        line-height: 1.15;
+    }
+
+
+    .delivery-info-box small {
+        display: block;
+
+        margin-top: 2px;
+
+        font-size: 7px;
+
+        line-height: 1.1;
+    }
+
+
+    .delivery-order-btn {
+        width: 100%;
+
+        min-height: 45px;
+
+        margin-top: 10px;
+
+        padding: 0 10px;
+
+        border-radius: 11px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 6px;
+
+        font-size: 12px;
+
+        font-weight: 800;
+    }
+
+
+    /* =====================================================
+       DELIVERY VISUAL
+    ===================================================== */
+
+    .delivery-visual {
+        width: 100%;
+
+        height: 125px !important;
+        min-height: 125px !important;
+        max-height: 125px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+    }
+
+
+    .delivery-glow {
+        transform: scale(0.55);
+    }
+
+
+    .delivery-circle {
+        width: 76px;
+        height: 76px;
+
+        border-radius: 50%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .delivery-circle i {
+        font-size: 30px;
+    }
+
+
+    .delivery-visual img {
+        max-width: 76px;
+        max-height: 76px;
+
+        width: auto;
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    .delivery-speed {
+        position: absolute;
+
+        top: 4px;
+        right: 5px;
+
+        padding: 5px 8px;
+
+        border-radius: 14px;
+
+        font-size: 7px;
+
+        font-weight: 900;
+    }
+
+
+    .delivery-time {
+        position: absolute;
+
+        left: 5px;
+        bottom: 4px;
+
+        width: 43px;
+        height: 43px;
+
+        border-radius: 50%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .delivery-time strong {
+        font-size: 14px;
+
+        line-height: 1;
+    }
+
+
+    .delivery-time span {
+        margin-top: 2px;
+
+        font-size: 6px;
+
+        font-weight: 800;
+    }
+
+
+    /* =====================================================
+       MOBILE BOTTOM NAV
+    ===================================================== */
+
+    .mobile-bottom-nav {
+        position: fixed;
+
+        left: 9px;
+        right: 9px;
+        bottom: 9px;
+
+        width: auto;
+
+        height: 65px;
+
+        margin: 0;
+        padding: 4px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        align-items: center;
+
+        z-index: 6000;
+
+        border-radius: 20px;
+
+        border:
+            1px solid
+            rgba(255, 255, 255, 0.90);
+
+        background:
+            rgba(255, 255, 255, 0.89);
+
+        backdrop-filter:
+            blur(24px);
+
+        -webkit-backdrop-filter:
+            blur(24px);
+
+        box-shadow:
+            0 14px 38px
+            rgba(48, 24, 10, 0.17);
+    }
+
+
+    .bottom-nav-item {
+        width: 100%;
+        height: 55px;
+
+        margin: 0;
+        padding: 0;
+
+        border: none;
+
+        background: transparent;
+
+        border-radius: 15px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 3px;
+
+        text-decoration: none;
+
+        cursor: pointer;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    .bottom-nav-item i {
+        font-size: 17px;
+
+        line-height: 1;
+    }
+
+
+    .bottom-nav-item span {
+        font-size: 8px;
+
+        line-height: 1;
+
+        font-weight: 800;
+    }
+
+
+    .bottom-nav-item.active {
+        background:
+            rgba(255, 255, 255, 0.70);
+    }
+
+
+    /* =====================================================
+       SMALL PHONES
+    ===================================================== */
+
+    @media (max-width: 380px) {
+
+        body {
+            padding-top: 124px;
+            padding-bottom: 86px;
+        }
+
+
+        .navbar {
+            height: 54px;
+        }
+
+
+        .logo {
+            font-size: 15px;
+        }
+
+
+        .login-btn {
+            width: 37px;
+            height: 37px;
+        }
+
+
+        .mobile-search-box {
+            top: 69px;
+        }
+
+
+        .mobile-search-box form {
+            height: 43px;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            min-height: 210px;
+
+            padding: 16px 14px;
+        }
+
+
+        .hero-content h1 {
+            font-size: 23px;
+
+            line-height: 1.08;
+
+            letter-spacing: -0.7px;
+
+            text-shadow:
+                0 2px 6px
+                rgba(0, 0, 0, 0.35);
+        }
+
+
+        .hero-content h1 strong {
+            font-size: 23px;
+
+            color: #ffb15c;
+
+            text-shadow:
+                0 2px 6px
+                rgba(0, 0, 0, 0.35);
+        }
+
+
+        .hero p {
+            font-size: 10px;
+        }
+
+
+        .hero-pizza,
+        .pizza-emoji {
+            display: none !important;
+        }
+
+
+        /* MENU */
+
+        .section-heading {
+            margin-bottom: 10px;
+        }
+
+
+        .section-heading span {
+            font-size: 10px;
+
+            letter-spacing: 1.6px;
+        }
+
+
+        .section-heading h2 {
+            font-size: 22px;
+
+            letter-spacing: -0.5px;
+        }
+
+
+        .section-heading p {
+            font-size: 11px;
+        }
+
+
+        .category-card {
+            min-height: 96px;
+        }
+
+
+        .category-icon {
+            font-size: 26px;
+        }
+
+
+        .category-card h3 {
+            font-size: 14px;
+        }
+
+
+        .category-card p {
+            font-size: 9px;
+        }
+
+
+        /* DELIVERY */
+
+        .delivery-card {
+            padding: 16px 12px 8px;
+        }
+
+
+        .delivery-content h2 {
+            font-size: 25px;
+        }
+
+
+        .delivery-content p {
+            font-size: 12px;
+        }
+
+
+        .delivery-visual {
+            height: 110px !important;
+            min-height: 110px !important;
+            max-height: 110px !important;
+        }
+
+
+        .delivery-circle {
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .delivery-circle i {
+            font-size: 28px;
+        }
+
+
+        .delivery-visual img {
+            max-width: 70px;
+            max-height: 70px;
+        }
+
+
+        /* BOTTOM NAV */
+
+        .bottom-nav-item i {
+            font-size: 16px;
+        }
+
+
+        .bottom-nav-item span {
+            font-size: 7px;
+        }
+    }
+}
